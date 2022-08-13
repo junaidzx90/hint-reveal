@@ -1,0 +1,64 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+ .hintRevealTable {
+    display: table;
+    margin: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+.hintRow {
+    display: table-row;
+}
+p.hintColumn {
+    display: table-cell;
+    margin: 0;
+    padding: 0 8px;
+    color: #fff;
+}
+.hintRow:first-child {
+    background-color: #ffffff24;
+    padding: 10px;
+    font-weight: 500;
+}
+button.reveal_butn {
+    all: unset;
+    padding: 0 10px;
+    background: #03a9f4;
+    border-radius: 2px;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+strong.responsive_head {
+    margin-right: 10px;
+    display: none;
+}
+.hintRow .empty{
+    display: inline-block !important;
+}
+.hintRow .fvalue{
+    display: none !important;
+}
+.hintRow.revealed .empty{
+    display: none !important;
+}
+.hintRow.revealed .fvalue{
+    display: inline-block !important;
+}
+/* @media only screen and (max-width: 768px) {
+    .hintRow:first-child {
+        display: none;
+    }
+    strong.responsive_head {
+        display: inline-block;
+    }
+    .hintRow {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid #ddd;
+        padding: 8px;
+    }
+} */
